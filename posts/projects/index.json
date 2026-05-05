@@ -7,6 +7,6 @@
     "status": "active",
     "github": "https://github.com/turalshkrov/nmap2msf",
     "excerpt": "Automate the creation of Metasploit resource scripts (.rc) for network enumeration, driven by Nmap XML scan results.",
-    "file": "/posts/projects/nmap2msf.md"
+    "file": "./../posts/projects/nmap2msf.md"
   }
 ]
