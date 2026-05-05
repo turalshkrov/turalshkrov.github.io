@@ -6,6 +6,6 @@
     "difficulty": "Easy",
     "platform": "TryHackMe",
     "excerpt": "The goal of Mr. Robot’s room is to find 3 hidden keys.",
-    "file": "../posts/writeups/thm/mr-robot/thm-mrrobot.md"
+    "file": "/posts/writeups/thm/mr-robot/thm-mrrobot.md"
   }
 ]
