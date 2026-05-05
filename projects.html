@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Tural Shukurov</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <div class="page-wrapper">
+    <div class="page-header">
+      <div class="page-header-label">// projects</div>
+      <h1>Projects</h1>
+      <p>Tools, scripts, and experiments I've built for red team work or CTFs.</p>
+    </div>
+
+    <div class="search-bar">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input type="text" id="search-input" placeholder="search by name, language, tag..." autocomplete="off" />
+    </div>
+
+    <div class="cards-grid" id="cards-container"></div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/md-loader.js"></script>
+  <script>
+    window.loadListing('posts/projects/index.json', '#cards-container', 'project');
+  </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post — whoami</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- highlight.js theme (base16/tomorrow-night) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/tomorrow-night.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <div class="page-wrapper">
+    <div class="post-wrapper">
+
+      <a id="back-link" class="back-link" href="../blog.html">Back</a>
+
+      <header class="post-header" id="post-header">
+        <div class="loading"><div class="spinner"></div></div>
+      </header>
+
+      <article class="post-body" id="post-body"></article>
+
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.0/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+  <script src="../js/nav.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/md-loader.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cat = new URLSearchParams(window.location.search).get('cat') || 'blog';
+      const backLink = document.getElementById('back-link');
+      const backMap  = {
+        blog:       '../blog.html',
+        writeup:    '../writeups.html',
+        cheatsheet: '../cheatsheets.html',
+        project:    '../projects.html',
+      };
+      const labelMap = {
+        blog:       'Back to Blog',
+        writeup:    'Back to Write-ups',
+        cheatsheet: 'Back to Cheat Sheets',
+        project:    'Back to Projects',
+      };
+      if (backLink) {
+        backLink.href        = backMap[cat]  || '../blog.html';
+        backLink.textContent = labelMap[cat] || 'Back';
+      }
+    });
+  </script>
+</body>
+</html>

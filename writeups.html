@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Write-ups — Tural Shukurov</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <div class="page-wrapper">
+    <div class="page-header">
+      <div class="page-header-label">// write-ups</div>
+      <h1>CTF Write-ups</h1>
+      <p>HackTheBox, TryHackMe, and competition CTF solutions.</p>
+    </div>
+
+    <div class="search-bar">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input type="text" id="search-input" placeholder="search by machine, technique, tag..." autocomplete="off" />
+    </div>
+
+    <div class="cards-grid" id="cards-container"></div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/md-loader.js"></script>
+  <script>
+    window.loadListing('posts/writeups/index.json', '#cards-container', 'writeup');
+  </script>
+</body>
+</html>

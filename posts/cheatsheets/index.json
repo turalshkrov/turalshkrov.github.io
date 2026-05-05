@@ -1,0 +1,9 @@
+[
+  {
+    "title": "SSRF Cheat Sheet",
+    "date": "2026-05-05",
+    "tags": ["Web", "SSRF", "OWASP Top 10"],
+    "excerpt": "Server Side Request Forgery Cheat Sheet",
+    "file": "../posts/cheatsheets/ssrf.md"
+  }
+]
